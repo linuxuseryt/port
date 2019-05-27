@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Crypto Portfolio</title>
+		<link rel="stylesheet" href="master.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="hero">
+		<h1 id='hold'>...</h1>
+		<h1 id='best'>...</h1>
+			<img src="wallet.png" width="70px" height="auto" alt="">
+			<div class="bal">
+				<h1 id="global-price">...</h1>
+				<p id="curbal">Current Balance</p>
+			</div>
+		</div>
+		<div class="coin-list">
+			<div class="coin">
+				<div class="title">
+					<img src="btc.png" alt="">
+					<h1>Bitcoin</h1>
+					<p id='btc-price'>...</p>
+				</div>
+				<p id="des">0.007 BTC</p>
+				<p class="perdes" id="btcper">+...%</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="bch.png" alt="">
+					<h1>Bitcoin Cash</h1>
+					<p id='bch-price'>...</p>
+				</div>
+				<p id="des">0.01356 BCH</p>
+				<p class="perdes" id="bchper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="dash.png" alt="">
+					<h1>Dash</h1>
+					<p id='dash-price'>...</p>
+				</div>
+				<p id="des">0.3253 DASH</p>
+				<p class="perdes" id="dashper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="bnb.png" alt="">
+					<h1>Binance Coin</h1>
+					<p id='bnb-price'>...</p>
+				</div>
+				<p id="des">0.88674258 BNB</p>
+				<p class="perdes" id="bnbper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="trx.png" alt="">
+					<h1>Tron</h1>
+					<p id='trx-price'>...</p>
+				</div>
+				<p id="des">1,577.42 TRX</p>
+				<p class="perdes" id="trxper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="ltc.png" alt="">
+					<h1>Litecoin</h1>
+					<p id='ltc-price'>...</p>
+				</div>
+				<p id="des">0.3986 LTC</p>
+				<p class="perdes" id="ltcper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="eos.png" alt="">
+					<h1>EOS</h1>
+					<p id="eos-price">...</p>
+				</div>
+				<p id="des">2 EOS</p>
+				<p class="perdes" id="eosper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="eth.png" alt="">
+					<h1>Ethereum</h1>
+					<p id="eth-price">...</p>
+				</div>
+				<p id="des">0.1705 ETH</p>
+				<p class="perdes" id="ethper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="ada.png" alt="">
+					<h1>Cardano</h1>
+					<p id="ada-price">...</p>
+				</div>
+				<p id="des">100 ADA</p>
+				<p class="perdes" id="adaper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="btt.png" alt="">
+					<h1>BitTorrent</h1>
+					<p id="btt-price">...</p>
+				</div>
+				<p id="des">3015 BTT</p>
+				<p class="perdes" id="bttper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="vet.png" alt="">
+					<h1>VeChain</h1>
+					<p id="vet-price">...</p>
+				</div>
+				<p id="des">5,593 VET</p>
+				<p class="perdes" id="vetper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="xlm.png" alt="">
+					<h1>Stellar</h1>
+					<p id="xlm-price">...</p>
+				</div>
+				<p id="des">269 XLM</p>
+				<p class="perdes" id="xlmper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="hot.png" alt="">
+					<h1>HoloToken</h1>
+					<p id="hot-price">...</p>
+				</div>
+				<p id="des">16,317 HOT</p>
+				<p class="perdes" id="hotper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="doge.png" alt="">
+					<h1>Dogecoin</h1>
+					<p id="doge-price">...</p>
+				</div>
+				<p id="des">6,641 DOGE</p>
+				<p class="perdes" id="dogeper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="xrp.png" alt="">
+					<h1>Ripple</h1>
+					<p id="xrp-price">...</p>
+				</div>
+				<p id="des">38.69 XRP</p>
+				<p class="perdes" id="xrpper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="usd.png" alt="">
+					<h1>Matic</h1>
+					<p id="matic-price">...</p>
+				</div>
+				<p id="des">254 MATIC</p>
+				<p class="perdes" id="maticper">...</p>
+			</div>
+			<div class="coin">
+				<div class="title">
+					<img src="snt.png" alt="">
+					<h1>Status</h1>
+					<p id="snt-price">...</p>
+				</div>
+				<p id="des">650 SNT</p>
+				<p class="perdes" id="sntper">...</p>
+			</div>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	var global = [];
+	var assets = [];
+	$.get("https://api.cryptonator.com/api/ticker/btc-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.007;
+		var fam = amount.toString().substring(0,5);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#btc-price').text("$"+fam);
+		$('#btcper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#btcper").css("color", "#c11230");
+  }else{
+  	$("#btcper").css("color", "#12af2dd6");
+		$('#btcper').text("+"+perm+"%");
+  }
+		global.push(fam);
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/bch-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.1356;
+		var fam = amount.toString().substring(0,5);
+		$('#bch-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#bchper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#bchper").css("color", "#c11230");
+  }else{
+  	$("#bchper").css("color", "#12af2dd6");
+		$('#bchper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/doge-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*6641;
+		var fam = amount.toString().substring(0,5);
+		$('#doge-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-25)/25)*100;
+		var perm = per.toString().substring(0,5);
+		$('#dogeper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#dogeper").css("color", "#c11230");
+  }else{
+  	$("#dogeper").css("color", "#12af2dd6");
+		$('#dogeper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/xlm-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*268.71;
+		var fam = amount.toString().substring(0,5);
+		$('#xlm-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#xlmper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#xlmper").css("color", "#c11230");
+  }else{
+  	$("#xlmper").css("color", "#12af2dd6");
+		$('#xlmper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/xrp-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*38;
+		var fam = amount.toString().substring(0,5);
+		$('#xrp-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-25)/25)*100;
+		var perm = per.toString().substring(0,5);
+		$('#xrpper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#xrpper").css("color", "#c11230");
+  }else{
+  	$("#xrpper").css("color", "#12af2dd6");
+		$('#xrpper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/hot-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*7712;
+		var fam = amount.toString().substring(0,5);
+		$('#hot-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-20)/20)*100;
+		var perm = per.toString().substring(0,5);
+		$('#hotper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#hotper").css("color", "#c11230");
+  }else{
+  	$("#hotper").css("color", "#12af2dd6");
+		$('#hotper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/ltc-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.3986;
+		var fam = amount.toString().substring(0,5);
+		$('#ltc-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#ltcper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#ltcper").css("color", "#c11230");
+  }else{
+  	$("#ltcper").css("color", "#12af2dd6");
+		$('#ltcper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/vet-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*5593;
+		var fam = amount.toString().substring(0,5);
+		$('#vet-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#vetper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#vetper").css("color", "#c11230");
+  }else{
+  	$("#vetper").css("color", "#12af2dd6");
+		$('#vetper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/trx-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*1577
+		var fam = amount.toString().substring(0,5);
+		$('#trx-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#trxper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#trxper").css("color", "#c11230");
+  }else{
+  	$("#trxper").css("color", "#12af2dd6");
+		$('#trxper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/eth-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.1705;
+		var fam = amount.toString().substring(0,5);
+		$('#eth-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#ethper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#ethper").css("color", "#c11230");
+  }else{
+  	$("#ethper").css("color", "#12af2dd6");
+		$('#ethper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/dash-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.3253;
+		var fam = amount.toString().substring(0,5);
+		$('#dash-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#dashper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#dashper").css("color", "#c11230");
+  }else{
+  	$("#dashper").css("color", "#12af2dd6");
+		$('#dashper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/bnb-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*0.8867;
+		var fam = amount.toString().substring(0,5);
+		$('#bnb-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-50)/50)*100;
+		var perm = per.toString().substring(0,5);
+		$('#bnbper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#bnbper").css("color", "#c11230");
+  }else{
+  	$("#bnbper").css("color", "#12af2dd6");
+		$('#bnbper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/ada-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*100;
+		var fam = amount.toString().substring(0,5);
+		$('#ada-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-12)/12)*100;
+		var perm = per.toString().substring(0,5);
+		$('#adaper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#adaper").css("color", "#c11230");
+  }else{
+  	$("#adaper").css("color", "#12af2dd6");
+		$('#adaper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/btt-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*3000;
+		var fam = amount.toString().substring(0,4);
+		$('#btt-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-7)/7)*100;
+		var perm = per.toString().substring(0,5);
+		$('#bttper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#bttper").css("color", "#c11230");
+  }else{
+  	$("#bttper").css("color", "#12af2dd6");
+		$('#bttper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/matic-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*254;
+		var fam = amount.toString().substring(0,4);
+		$('#matic-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-8)/8)*100;
+		var perm = per.toString().substring(0,5);
+		$('#maticper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#maticper").css("color", "#c11230");
+  }else{
+  	$("#maticper").css("color", "#12af2dd6");
+		$('#maticper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/eos-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*2;
+		var fam = amount.toString().substring(0,5);
+		$('#eos-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-20)/20)*100;
+		var perm = per.toString().substring(0,5);
+		$('#eosper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#eosper").css("color", "#c11230");
+  }else{
+  	$("#eosper").css("color", "#12af2dd6");
+		$('#eosper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$.get("https://api.cryptonator.com/api/ticker/snt-aud", function(data){
+		var text = `${data.ticker.price}`;
+		var amount = text*650;
+		var fam = amount.toString().substring(0,5);
+		$('#snt-price').text("$"+fam);
+		global.push(fam);
+		var per = ((fam-27)/27)*100;
+		var perm = per.toString().substring(0,5);
+		$('#sntper').text(perm+"%");
+		if(perm.charAt(0) == "-"){
+ 	 $("#sntper").css("color", "#c11230");
+  }else{
+  	$("#sntper").css("color", "#12af2dd6");
+		$('#sntper').text("+"+perm+"%");
+  }
+		assets.push(1);
+	});
+	$(document).ajaxStop(function() {
+	  var fin = eval(global.join("+"));
+		var finfin = fin.toString().substring(0,6);
+		var per = ((fin-500)/500)*100;
+		var perfin = per.toString().substring(0,5);
+		var prof = fin-500;
+		var fprof = prof.toString().substring(0,5);
+		$('#curbal').text("+"+perfin+"% Interest");
+		$('#global-price').text("$"+finfin);
+		$('#best').text("Total Profit : $"+fprof);
+		$('#hold').text(assets.length + " Assets");
+	});
+	</script>
+</html>
